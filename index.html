@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js"></script>
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <div class="row">
+          <div class="col-6">
+            <h1 id="temperature"></h1>
+            <h2 id="city">
+              Varaždin, Croatia
+            </h2>
+          </div>
+          <div class="col-6">
+            <form id="search-form">
+              <input type="text" placeholder="Search a city" id="city-input" />
+            </form>
+            <div class="col" class="day" id="date"></div>
+          </div>
+        </div>
+        <div class="weather"></div>
+        <div class="row">
+          <div class="col-2">
+            🌧 <br />
+            Thu <br />
+            18°C
+          </div>
+          <div class="col-2">
+            🌧 <br />
+            Fri <br />
+            12°C
+          </div>
+          <div class="col-2">
+            ⛅ <br />
+            Sat <br />
+            13°C
+          </div>
+          <div class="col-2">
+            🌧 <br />
+            Sun <br />
+            14°C
+          </div>
+          <div class="col-2">
+            🌧 <br />
+            Mon <br />
+            14°C
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
